@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.github.frajimiba</groupId>
+	<artifactId>commonstruct</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	
+	<name>commonstruct</name>
+	<description>commonstruct</description>
+	  
+	<modules>
+		<module>commonstruct-core</module>
+		<module>commonstruct-audit</module>
+		<module>commonstruct-jee</module>
+		<module>commonstruct-spring</module>
+	</modules>
+  
+	<properties>
+		<java.version>1.6</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<javax.jee.version>5</javax.jee.version>
+		<javax.validation.version>1.0.0.GA</javax.validation.version>
+		<commons.codec.version>1.6</commons.codec.version>
+		<junit.version>4.8.1</junit.version>
+		<bouncycastle.version>1.52</bouncycastle.version>
+		<commons.lang3.version>3.3.2</commons.lang3.version>
+		<commons.io.version>2.4</commons.io.version>
+		<commons.validator.version>1.6</commons.validator.version>
+	</properties>
+  
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+	            <groupId>javaee</groupId>
+	            <artifactId>javaee-api</artifactId>
+				<version>${javax.jee.version}</version>
+			</dependency>
+			<dependency>
+	            <groupId>javax.validation</groupId>
+	            <artifactId>validation-api</artifactId>
+				<version>${javax.validation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-codec</groupId>
+				<artifactId>commons-codec</artifactId>
+				<version>${commons.codec.version}</version>
+			</dependency>
+			<dependency>
+	           <groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bouncycastle</groupId>
+				<artifactId>bcprov-jdk15on</artifactId>
+				<version>${bouncycastle.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bouncycastle</groupId>
+				<artifactId>bcpkix-jdk15on</artifactId>
+				<version>${bouncycastle.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${commons.lang3.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>${commons.io.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>commons-validator</groupId>
+			    <artifactId>commons-validator</artifactId>
+			    <version>${commons.validator.version}</version>
+			</dependency>
+			
+		</dependencies>
+	</dependencyManagement>
+
+</project>
